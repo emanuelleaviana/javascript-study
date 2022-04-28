@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro passos com DOM</title>
+    <style>
+        body {
+            background-color: lightcoral;
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com <strong>DOM</strong></h1>
+    <p>Aqui vai o resultado</p>
+    <p>Testando</p>
+    <div id="msn">Clique em mim</div>
+
+    <script>
+        window.document.write('Olá, mundo!')
+        var p1 = window.document.getElementById('msn')
+        window.document.write('A frase selecionada é' + p1.innerHTML)
+    </script>
+
+</body>
+</html>
