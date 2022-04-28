@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            background-color: lightcoral;
+            color: black;
+            font: normal 20px arial;
+            margin: 0px;
+        }
+
+        div{
+            margin-top: 20px;
+        }
+        
+        header>h1{
+            background-color: white;
+            margin-top: 0px;
+            padding-top: 10px;
+            text-align: center;
+        }
+
+        main {
+            background-color: white;
+            margin: auto;
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+        <header>
+            <h1>TESTE JÁ SUA NACIONALIDADE!</h1>
+        </header>
+
+        <main>
+            Digite o seu país: <input type="text" id="pais">
+            <input type="button" value="Verificar" id="btn" onclick="testa()">
+            <div id="resp"></div>
+        </main>
+
+    <script>
+        function testa() {
+        var txt = window.document.getElementById('pais')
+        var r = window.document.getElementById('resp')
+
+        if (txt.value.toUpperCase() == 'BRASIL') {
+            r.innerHTML='Você é <strong>BRASILEIRO</strong>.'
+        } else {
+            r.innerHTML='Você é <strong>GRINGO</strong>.'
+        }
+        }
+    </script>
+</body>
+</html>
